@@ -1,10 +1,9 @@
+import { Box } from '@chakra-ui/react';
 import React from 'react';
 
 const TodoList = () => {
   return (
-    <div>
-      todo list
-    </div>
+    <Box textAlign="center" my="4">No tasks found, great job!</Box>
   );
 };
 
