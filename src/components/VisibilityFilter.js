@@ -1,15 +1,20 @@
-import { Container, Tab, TabList, Tabs } from '@chakra-ui/react';
-import object from 'prop-types'
-import React from 'react';
-import { VISIBILITY_FILTER } from '../constants';
+import { Container, Tab, TabList, Tabs } from "@chakra-ui/react";
+import object from "prop-types";
+import React from "react";
+import { VISIBILITY_FILTER } from "../constants";
 
 const VisibilityFilter = () => {
   return (
     <Container centerContent>
       <Tabs>
         <TabList>
-          {object.keys(VISIBILITY_FILTER).map(filterkey => {
+          {Object.keys(VISIBILITY_FILTER).map((filterkey) => {
             const currentFilter = VISIBILITY_FILTER[filterkey];
+            return (
+              <Tab key={`visibility-filter-${currentFilter}`}>
+                {currentFilter}
+              </Tab>
+            );
           })}
         </TabList>
       </Tabs>
