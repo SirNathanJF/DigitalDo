@@ -1,11 +1,13 @@
+import { Box, Checkbox, Text } from '@chakra-ui/react';
 import React from 'react';
 
-const ToDo = () => {
+export const Todo = ({ todo }) => {
   return (
-    <div>
-      todo
-    </div>
+    <Box>
+      <Checkbox>
+        <Text>{todo.content}</Text>
+      </Checkbox>
+    </Box>
   );
 };
 
-export default ToDo;
