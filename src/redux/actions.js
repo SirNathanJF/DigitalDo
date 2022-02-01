@@ -7,3 +7,10 @@ export const addTodo = (content) => ({
     content,
   },
 });
+
+export const toggleTodo = id => ({
+  type: TOGGLE_TODO,
+  payload: {
+    id,
+  },
+});

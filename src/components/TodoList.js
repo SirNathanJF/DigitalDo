@@ -7,8 +7,8 @@ const TodoList = () => {
   const { todos } = useSelector((state) => state);
   return (
     <Box my={3}>
-      {todos.length ? todos.map(todo => (
-        <Todo key={`todo.id`} todo={todo}/>
+      {todos.todos.length ? todos.todos.map(todo => (
+        <Todo key={`todo-${todo.id}`} todo={todo}/>
       )):<Box textAlign="center" my="4">
           No tasks found, great job!
         </Box>}
