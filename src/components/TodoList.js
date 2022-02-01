@@ -6,7 +6,7 @@ import { Todo } from "./Todo";
 const TodoList = () => {
   const { todos } = useSelector((state) => state);
   return (
-    <Box>
+    <Box my={3}>
       {todos.length ? todos.map(todo => (
         <Todo key={`todo.id`} todo={todo}/>
       )):<Box textAlign="center" my="4">
