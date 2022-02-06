@@ -1,4 +1,4 @@
-# Unit 20: React Portfolio
+# DigitalDo
 
 <img src="./Assets/ToDo_Screenshot.png" alt="screenshot" width="300" height="200"/>
 
